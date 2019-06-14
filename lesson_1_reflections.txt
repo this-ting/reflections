@@ -1,0 +1,49 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+	It is like auto find for the differences in the two versions. The computer
+	finding it over the human eye can avoid mistakes and overlooking details.
+
+How could having easy access to the entire history of a file make you a more 
+efficient programmer in the long term?
+	In case you need to go back to before a certain change or update was made, it 
+	makes it a lot easier
+
+What do you think are the pros and cons of manually choosing when to create a 
+commit, like you do in Git, vs having versions automatically saved, like Google 
+Docs does?
+	Google Doc saves every single change, which is too small and cluttered when 
+	working on a large scale project. Also, you won't be able to quickly tell what 
+	the purpose of the change is. Whereas, with Git, you can manually save it at 
+	each point, a commit, and note down the purpose of the change. This makes it 
+	easier to go back to a point in time, for version control.
+
+Why do you think some version control systems, like Git, allow saving multiple 
+files in one commit, while others, like Google Docs, treat each file separately?
+	Because most often than not, you will have multiple files simultaneously 
+	working together with each other. You want to be able to track changes in a 
+	snapshot view of all the co-working files.
+
+How can you use the commands git log and git diff to view the history of files?
+	cd to the to the depository folder and then git log to see the commit logs
+	git diff id1 id2 to get the differneces
+
+How might using version control make you more confident to make changes that could 
+break something?
+	Because we can go back commit by commit, using git checkout, until we find 
+	which commit the bug was introduced then use git diff to find the bug
+
+Now that you have your workspace set up, what do you want to try using Git for?
+	Using it for version control
+
+Terminal Controls
+	cd 
+	subl
+	open
+	ls
+	find
+	git log - the commit logs
+	git diff - compares two commits/versions
+	git checkout - to go back to a certain commit/version
+	git clone - to make a copy of the entire git repository to your computer
+		git clone vs copy - learn difference
+	git init 
