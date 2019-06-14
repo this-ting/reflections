@@ -1,0 +1,20 @@
+What happens when you initialize a repository? Why do you need to do it?
+	when you initialize a repository, via git init, it creates the file .git. This 
+	is a invisible metadata file that logs all the commits
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+	The staging area, is where you put the final draft to be place before it gets 
+	published. It offers more flexibility in the middle.
+
+
+
+
+
+
+
+
+Terminal Controls
+	git init - creates git repository
+	git status 
+	git add - adds it to the staging area before you add it to the repsitory
+	git commit - commits it from staging area to repository
