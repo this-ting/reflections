@@ -6,15 +6,42 @@ How is the staging area different from the working directory and the repository?
 	The staging area, is where you put the final draft to be place before it gets 
 	published. It offers more flexibility in the middle.
 
+How can you use the staging area to make sure you have one commit per logical 
+change?
+	via git diff --staged to compare in the repository to staging area before you 
+	commit
 
+What are some situations when branches would be helpful in keeping your history 
+organized? How would branches help?
+	Branches help by creating different experimental versions of the game without jepordizing the master branch. 
+	diff branch (name of branch)
+	diff checkout (name of branch)
+	diff branch
+	//shows all the branches and * the branch you are on
 
+How do the diagrams help you visualize the branch structure?
+	Branches are not linear, so drawing them helps visualize
 
+What is the result of merging two branches together? Why do we represent it in the 
+diagram the way we do?
+	When you merge two branches together, it merges ALL the commits together. To 
+	show it in the diagram, you would link up the two branches and make a commit
 
-
-
+What are the pros and cons of Git’s automatic merging vs. always doing merges 
+manually?
+	Git's automatic merging can check out any conflicts automatically.
 
 Terminal Controls
 	git init - creates git repository
 	git status 
 	git add - adds it to the staging area before you add it to the repsitory
 	git commit - commits it from staging area to repository
+	git diff - when no id listed, will run on working directory and staging area
+	git diff --staged - compares staging area to respository
+	git checkout master
+	git checkout -b (new branch name) - two actions in one, creates new branch and checksout to it
+	git branch - shows all branches and * the one you are on
+	git branch -d (branch name)	- deletes said branch name
+	git rest --hard - discards all changes in working directory and staging area
+	git gc - deletes unbranched commits
+	git show - diff compares to parent 
