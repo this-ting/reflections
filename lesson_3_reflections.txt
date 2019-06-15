@@ -5,5 +5,31 @@ Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 	Maybe you are working on a new feature, and doesnt want it to clash with someone else's edits
 
+Describe the differences between forks, clones, and branches. When would you use 
+one instead of another?
+	Cloning - copies and creates a remote link to the repository
+	Forks - copies on to a new respsitory and has a fork link to the original 
+	repository
+	Branches - a non-linear commit that branches off of the master
 
+What is the benefit of having a copy of the last known state of the remote stored 
+locally?
+	That way you can go back and find the differneces when you are collabating and run into merge conflicts
 
+How would you collaborate without using Git or GitHub? What would be easier, and 
+what would be harder?
+	It would be a lot harder to collab without Git or Github, since it has a lot of built in features to help with collabing and adding features, debugging etc
+
+When would you want to make changes in a separate branch rather than directly in 
+master? What benefits does each approach have?
+	Everytime you want to add a new feature by doing this, it helps test it out 
+	first to ensure it works, and that works with the master before merging it. 
+	The master branch is the production level branch, don't want to casually mess 
+	around with this.
+
+Terminal Controls
+	git push origin (branch name)
+	git pull origin (branch name)
+	git fetch - copies the repsitory and creates a branch origin/master
+		think of a git pull as a git fetch origin/master then a git merge with master
+	
